@@ -430,3 +430,9 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* No WRAP - to get sentences in a single line */
+.nowrap {
+  white-space: nowrap ;
+}
+
