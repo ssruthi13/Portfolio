@@ -165,14 +165,14 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 8rem;
   height: 80vh;
 }
 
 .section__pic-container {
   display: flex;
   height: 400px;
-  width: 400px;
+  width: 600px;
   margin: auto 0;
 }
 
@@ -194,6 +194,9 @@ section {
   margin-bottom: 1rem;
 }
 
+.profile-pic {
+  border-radius: 2rem;
+}
 .title {
   font-size: 3rem;
   text-align: center;
