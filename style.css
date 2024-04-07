@@ -151,7 +151,7 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 0 7rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -159,6 +159,7 @@ section {
 .section-container {
   display: flex;
 }
+
 
 /* PROFILE SECTION */
 
@@ -292,8 +293,8 @@ section {
 
 .arrow {
   position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  right: -4rem;
+ 
 }
 
 .details-container {
@@ -444,4 +445,3 @@ footer p {
 .nowrap {
   white-space: nowrap ;
 }
-
