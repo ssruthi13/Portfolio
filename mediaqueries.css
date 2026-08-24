@@ -1,103 +1,169 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+@media screen and (max-width: 1040px) {
+  .desktop-nav {
+    display: none;
   }
-  
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+
+  .menu-button {
+    display: grid;
   }
-  
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 4rem;
   }
+
+  .hero-panel {
+    grid-template-columns: minmax(0, 0.9fr) minmax(260px, 1fr);
+    align-items: stretch;
+  }
+
+  .portrait-card {
+    grid-row: span 2;
+  }
+
+  .portrait-card img {
+    height: 100%;
+    min-height: 380px;
+  }
+
+  .capability-grid,
+  .project-grid,
+  .lab-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-card.featured {
+    grid-column: span 2;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .site-header {
+    width: calc(100% - 1rem);
+    margin-top: 0.5rem;
+    border-radius: 1.2rem;
+  }
+
+  .brand span:last-child {
+    max-width: 11rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .section-shell {
+    width: min(100% - 1.1rem, 680px);
+    padding: 3.6rem 0;
+  }
+
+  .hero {
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+
+  h1 {
+    font-size: clamp(2.7rem, 16vw, 4.4rem);
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 10vw, 2.6rem);
+  }
+
+  .hero-summary,
+  .section-heading p {
+    font-size: 1rem;
+  }
+
+  .hero-panel,
+  .metric-grid,
+  .capability-grid,
+  .project-grid,
+  .lab-grid,
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait-card {
+    grid-row: auto;
+  }
+
+  .portrait-card img {
+    height: 390px;
+    min-height: 0;
+  }
+
+  .project-card.featured {
+    grid-column: auto;
+  }
+
+  .timeline-date {
+    padding-top: 0;
+  }
+
+  .hero-actions,
+  .lens-controls {
+    align-items: stretch;
+  }
+
+  .button,
+  .lens-button {
+    flex: 1 1 auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .site-header {
+    padding: 0.55rem;
+  }
+
+  .brand {
+    gap: 0.5rem;
+    font-size: 0.92rem;
+  }
+
+  .brand-mark,
+  .icon-button,
+  .menu-button {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .header-actions {
+    gap: 0.35rem;
+  }
+
+  .hero-actions,
+  .lens-controls,
+  .signal-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .button,
+  .lens-button {
+    width: 100%;
+  }
+
+  .portrait-card img {
+    height: 330px;
+  }
+
+  .timeline-card,
+  .project-card,
+  .lab-card,
+  .capability-card,
+  .lens-card,
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .site-footer {
+    display: grid;
+    gap: 0.8rem;
+  }
+}
