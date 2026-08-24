@@ -1,297 +1,337 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="Sai Sruthi Chalasani - Forward Deployed Software Engineer, Full Stack Developer, and Applied AI learner building reliable backend and customer-facing systems."
+    />
+    <title>Sai Sruthi Chalasani | Forward Deployed Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <style>
-    div {
-      text-align: justify;
-      text-justify: inter-word;
-    }
-    </style>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Sai Sruthi Chalasani</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Sai Sruthi Chalasani</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img 
-        src="./assets/profile-pic.png" 
-        alt=" My profile picture" 
-        class="profile-pic"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sai Sruthi Chalasani</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="window.open('./assets/chalasani sai sruthi.pdf')">
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/saisruthi-chalasani/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/ssruthi13/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>4+ years 
-                <br /> 
-                <span class="nowrap"> Full Stack Developer </span></p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p><span class="nowrap">Masters in Stevens Institute Of Technology</span>
-                <br />
-                <span class="nowrap">Bachelors in Amrita Vishwa Vidhyapeetham</span></p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>  
-Over 4+ years of expertise in Java/Python technologies, including Spring, Hibernate, and Microservices architecture, with a proven track record of 
-delivering innovative software solutions. Demonstrate proficiency in object-oriented design, database administration, and AWS 
-deployment. Possess skills in unit testing, CI/CD implementation, and Agile methodologies, contributing to projects ranging from analysis 
-and design to successful delivery. Experience in leading projects, collaborating with stakeholders, and ensuring top-tier code quality, 
-establishing a strong foundation for impactful software development endeavors by reducing the human efforts nearly by 60%.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h4 class="experience-sub-title">Senior Software Developer - UPS [2023 - Present]</h4>
-            <div class="text-container">
-            <p> 
-              Being a developer, Worked in NEXT-GEN project called ROAR application that support billing and quoting revenue for UPS app. Maintained and imporvised our application in IBM desicion center ODM to support BA requirements. Worked on Rule designer to create workflows and take up the actions decisively.       
-             </p>
-            </div>
-          </div>
-        
-          
-            <div class="details-container">
-              <h2 class="experience-sub-title">Asscociate Software Developer - JPMC [2023 - 2023]</h3>
-              <div class="text-container">
-              <p> 
-                As an Associate Software Engineer, I provided dedicated support in Notifications/Subscription/billing project for esteemed client AWS to migrate banking application from Chase platform to AWS to process the payment activity. Focused on developing and testing Java and React-based APIs while ensuring error response validation.
-              </p>
-              </div>
-            </div>
-         
-          
-            <div class="details-container">
-              <h2 class="experience-sub-title">Research Engineer - Hyundai Mobis [ 2020 - 2022]</h2>
-              <div class="text-container">
-              <p> 
-                I was heavily involved in a Model-Based Development project focused on creating a cutting-edge Remote Smart Parking Assist (RSPA) system. This sophisticated system was designed to automate both parallel and perpendicular parking processes. As part of the project, I successfully debugged and tested algorithms such as Parking Slot Detection (PSD) and Parking Path Control (PPC) within Simulink models for our esteemed Korean clients.
-                </p>
-              </div>
-            </div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Sai Sruthi Chalasani home">
+        <span class="brand-mark">SC</span>
+        <span>Sai Sruthi Chalasani</span>
+      </a>
 
-          </div>
-       </div>
-      
-            
-      
-         
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h4 class="experience-sub-title project-title">
-              <span class="nowrap">Weather Web App</span> </h4>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ssruthi13/Weather-web-app'"
-              >
-                Github Link
-              </button>
-           
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h4 class="experience-sub-title project-title">
-              <span class="nowrap">  Prediction of Stocks </span>  </h4>
-            <div class="btn-container">
-             
-             <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://ieeexplore.ieee.org/document/9441850'"
-              >
-                Publication Link
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h4 class="experience-sub-title project-title">
-              <span class="nowrap"> Video Summarization</span>  </h4>
-            <div class="btn-container">
-    
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://ieeexplore.ieee.org/document/9432191'"
-              >
-              Publication Link
-              </button>
-  
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">saisruthi1999@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/saisruthi-chalasani/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#lens">Role Lens</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#lab">AI Lab</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <p>Copyright &#169; 2024 Sai Sruthi. All Rights Reserved.</p>
+
+      <div class="header-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme">
+          <span class="theme-icon">☾</span>
+        </button>
+        <button class="menu-button" id="menu-toggle" type="button" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#lens">Role Lens</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#lab">AI Lab</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="home">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Full Stack Developer | Forward Deployed Software Engineer</p>
+          <h1>Building practical software for business-critical workflows.</h1>
+          <p class="hero-summary">
+            I am a software engineer with 4+ years of experience across logistics, banking, and automotive systems. I build backend services, frontend workflows, and applied AI prototypes that translate ambiguous requirements into usable products.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="./assets/chalasani sai sruthi.pdf" target="_blank" rel="noreferrer">Resume</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/saisruthi-chalasani/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button ghost" href="https://github.com/ssruthi13/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <div class="signal-row" aria-label="Professional highlights">
+            <span>Java</span>
+            <span>Python</span>
+            <span>Spring Boot</span>
+            <span>React</span>
+            <span>AWS</span>
+            <span>Applied AI</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Profile snapshot">
+          <div class="portrait-card">
+            <img src="./assets/profile-pic.png" alt="Sai Sruthi Chalasani" />
+          </div>
+          <div class="status-card">
+            <div>
+              <span class="status-dot"></span>
+              <p>Open to roles</p>
+            </div>
+            <strong>Backend, Full Stack, Forward Deployed, Applied AI</strong>
+          </div>
+          <div class="metric-grid">
+            <div>
+              <strong>4+</strong>
+              <span>years engineering</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>domains shipped in</span>
+            </div>
+            <div>
+              <strong>2</strong>
+              <span>research publications</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-shell lens-section" id="lens">
+        <div class="section-heading">
+          <p class="eyebrow">Role lens</p>
+          <h2>Same experience, three recruiter views.</h2>
+          <p>
+            Use the lens to highlight the skills and proof most relevant to Backend, Forward Deployed, or Applied AI roles.
+          </p>
+        </div>
+
+        <div class="lens-controls" role="tablist" aria-label="Portfolio role lens">
+          <button class="lens-button active" type="button" data-lens="backend" role="tab" aria-selected="true">Backend</button>
+          <button class="lens-button" type="button" data-lens="fde" role="tab" aria-selected="false">Forward Deployed</button>
+          <button class="lens-button" type="button" data-lens="ai" role="tab" aria-selected="false">Applied AI</button>
+        </div>
+
+        <div class="lens-output" aria-live="polite">
+          <div class="lens-card is-visible" data-lens-panel="backend">
+            <span>Backend lens</span>
+            <h3>Reliable APIs, services, and workflow systems.</h3>
+            <p>Best fit for teams looking for Java, Python, Spring Boot, REST APIs, SQL, integrations, and production support experience.</p>
+          </div>
+          <div class="lens-card" data-lens-panel="fde">
+            <span>Forward Deployed lens</span>
+            <h3>Engineering close to users and business requirements.</h3>
+            <p>Best fit for roles that need customer empathy, fast prototyping, requirement translation, implementation ownership, and cross-functional delivery.</p>
+          </div>
+          <div class="lens-card" data-lens-panel="ai">
+            <span>Applied AI lens</span>
+            <h3>Software engineering foundation moving into AI products.</h3>
+            <p>Best fit for teams building LLM-powered tools, RAG workflows, automation, evaluation, and production-oriented AI applications.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell capability-section" id="capabilities">
+        <div class="section-heading compact">
+          <p class="eyebrow">Capability stack</p>
+          <h2>What I bring to product and platform teams.</h2>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card" data-role="backend fde">
+            <p>Backend Systems</p>
+            <h3>Java, Python, Spring Boot, REST APIs</h3>
+            <span>Designing and maintaining business workflows, service integrations, validation paths, and backend features.</span>
+          </article>
+          <article class="capability-card" data-role="backend fde">
+            <p>Enterprise Workflows</p>
+            <h3>Billing, quoting, payments, rule systems</h3>
+            <span>Experience in domains where correctness, auditability, and stakeholder alignment matter.</span>
+          </article>
+          <article class="capability-card" data-role="backend ai">
+            <p>Cloud & Delivery</p>
+            <h3>AWS, CI/CD, testing, deployments</h3>
+            <span>Supporting cloud migration, API testing, release readiness, and production quality practices.</span>
+          </article>
+          <article class="capability-card" data-role="fde ai">
+            <p>Applied AI Direction</p>
+            <h3>Python, NLP, LLM APIs, RAG roadmap</h3>
+            <span>Building toward applied AI systems grounded in software engineering, not just demos.</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Business-critical systems across logistics, banking, and automotive.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item" data-role="backend fde">
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-card">
+              <p class="role-label">Senior Software Developer | UPS</p>
+              <h3>Enterprise Billing Rules Modernization</h3>
+              <p>
+                Work on revenue-focused billing and quoting workflows, supporting rule changes, backend enhancements, and business requirement delivery for logistics systems.
+              </p>
+              <ul>
+                <li>Translate business requirements into maintainable rule and workflow updates.</li>
+                <li>Support IBM ODM decision center and rule designer workflows.</li>
+                <li>Collaborate across business and engineering teams to keep billing logic reliable.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-role="backend fde">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-card">
+              <p class="role-label">Associate Software Developer | JPMC</p>
+              <h3>Cloud Migration Support for Payment Workflows</h3>
+              <p>
+                Supported banking notification, subscription, and billing workflows during migration activity toward AWS-backed services.
+              </p>
+              <ul>
+                <li>Developed and tested Java and React-based API features.</li>
+                <li>Focused on request validation, error handling, and payment activity support.</li>
+                <li>Worked in a high-compliance environment where clear testing and reliability matter.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-role="backend ai">
+            <div class="timeline-date">2020 - 2022</div>
+            <div class="timeline-card">
+              <p class="role-label">Research Engineer | Hyundai Mobis</p>
+              <h3>Model-Based Automotive Parking Assist Validation</h3>
+              <p>
+                Contributed to Remote Smart Parking Assist work involving model-based development, Simulink debugging, and algorithm validation.
+              </p>
+              <ul>
+                <li>Tested parking slot detection and parking path control behavior.</li>
+                <li>Debugged model logic and validated algorithm outcomes for engineering stakeholders.</li>
+                <li>Built domain experience in safety-sensitive automotive systems.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projects & research</p>
+          <h2>Current work, research proof, and case-study direction.</h2>
+          <p>
+            The goal is quality over quantity: a few clear stories that show software engineering judgment and the direction I am building toward.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured" data-role="fde backend">
+            <span class="project-kicker">Case study from experience</span>
+            <h3>Enterprise Billing Rules Workflow</h3>
+            <p>
+              An anonymized portfolio case study based on enterprise billing and quoting work: requirements, rule updates, testing flow, and operational reliability.
+            </p>
+            <div class="tag-row">
+              <span>Java</span><span>IBM ODM</span><span>Workflows</span><span>Testing</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-role="ai backend">
+            <span class="project-kicker">Research publication</span>
+            <h3>Prediction of Stocks</h3>
+            <p>
+              Research work exploring predictive modeling for stock movement analysis, presented as applied ML background rather than a trading product claim.
+            </p>
+            <a href="https://ieeexplore.ieee.org/document/9441850" target="_blank" rel="noreferrer">View publication</a>
+          </article>
+
+          <article class="project-card" data-role="ai backend">
+            <span class="project-kicker">Research publication</span>
+            <h3>Video Summarization</h3>
+            <p>
+              Research work in summarization, useful context for current Applied AI direction around extraction, compression, and user-facing intelligence.
+            </p>
+            <a href="https://ieeexplore.ieee.org/document/9432191" target="_blank" rel="noreferrer">View publication</a>
+          </article>
+
+          <article class="project-card" data-role="backend">
+            <span class="project-kicker">Early project</span>
+            <h3>Weather Web App</h3>
+            <p>
+              A foundational frontend/API project kept as a simple proof of early web development practice.
+            </p>
+            <a href="https://github.com/ssruthi13/Weather-web-app" target="_blank" rel="noreferrer">View GitHub</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell lab-section" id="lab">
+        <div class="section-heading">
+          <p class="eyebrow">Applied AI Lab</p>
+          <h2>A focused project pipeline, not a wall of unfinished demos.</h2>
+          <p>
+            These are the projects I am shaping next to combine backend engineering, customer-facing workflows, and applied AI. Each one will become a real case study as it is built.
+          </p>
+        </div>
+
+        <div class="lab-grid">
+          <article class="lab-card active" data-role="ai fde backend">
+            <div class="lab-status">Planned flagship</div>
+            <h3>AI Incident Response Assistant</h3>
+            <p>Reads alerts and runbooks, gathers context, and suggests safe next steps with citations and human approval.</p>
+            <div class="mini-architecture">
+              <span>Alerts</span><span>Runbooks</span><span>RAG</span><span>Action Plan</span>
+            </div>
+          </article>
+          <article class="lab-card" data-role="ai fde backend">
+            <div class="lab-status">Planned support project</div>
+            <h3>Release Intelligence Dashboard</h3>
+            <p>Summarizes changes, test signals, deployment risks, and release notes for engineering and business teams.</p>
+            <div class="mini-architecture">
+              <span>PRs</span><span>Tests</span><span>Risk</span><span>Release</span>
+            </div>
+          </article>
+          <article class="lab-card" data-role="ai fde">
+            <div class="lab-status">Future case study</div>
+            <h3>Enterprise Policy Copilot</h3>
+            <p>Explains decisions from policy documents and rules, detects gaps, and helps nontechnical users understand outcomes.</p>
+            <div class="mini-architecture">
+              <span>Policies</span><span>Rules</span><span>Explain</span><span>Review</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let us build something useful.</h2>
+          <p>
+            I am open to software engineering roles where backend systems, user needs, and practical AI can meet.
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:saisruthi1999@gmail.com">saisruthi1999@gmail.com</a>
+          <a href="https://www.linkedin.com/in/saisruthi-chalasani/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/ssruthi13/" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Copyright 2026 Sai Sruthi Chalasani</span>
+      <a href="#home">Back to top</a>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
