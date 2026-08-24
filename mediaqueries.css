@@ -22,10 +22,6 @@
     grid-row: span 2;
   }
 
-  .portrait-card img {
-    max-height: 520px;
-  }
-
   .capability-grid,
   .project-grid,
   .lab-grid {
@@ -93,10 +89,7 @@
 
   .portrait-card {
     grid-row: auto;
-  }
-
-  .portrait-card img {
-    max-height: 460px;
+    aspect-ratio: 4 / 5;
   }
 
   .project-card.featured {
@@ -149,10 +142,6 @@
   .button,
   .lens-button {
     width: 100%;
-  }
-
-  .portrait-card img {
-    max-height: 390px;
   }
 
   .timeline-card,
