@@ -214,24 +214,24 @@ html[data-theme="light"] .site-header {
   position: relative;
   width: min(1180px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 5.5rem 0;
+  padding: 4.8rem 0;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
-  gap: 3rem;
+  grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr);
+  gap: 3.4rem;
   align-items: center;
   min-height: calc(100vh - 6rem);
-  padding-top: 4.5rem;
+  padding-top: 3.8rem;
 }
 
 .eyebrow {
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.8rem;
   color: var(--accent-strong);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -244,19 +244,19 @@ p {
 
 .hero-name {
   max-width: 760px;
-  margin-bottom: 1rem;
-  font-size: clamp(3rem, 6.2vw, 5.2rem);
-  line-height: 0.98;
+  margin-bottom: 0.9rem;
+  font-size: clamp(2.9rem, 5.8vw, 4.8rem);
+  line-height: 1;
   letter-spacing: 0;
 }
 
 .hero-headline {
-  max-width: 760px;
-  margin-bottom: 1rem;
+  max-width: 700px;
+  margin-bottom: 0.85rem;
   color: var(--text);
-  font-size: clamp(1.45rem, 2.7vw, 2.35rem);
+  font-size: clamp(1.35rem, 2.35vw, 2.05rem);
   font-weight: 800;
-  line-height: 1.12;
+  line-height: 1.14;
 }
 
 h2 {
@@ -280,13 +280,13 @@ p {
 .hero-summary,
 .section-heading p {
   max-width: 760px;
-  font-size: 1.06rem;
+  font-size: 1rem;
 }
 
 .hero-actions {
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 2rem;
+  margin-top: 1.45rem;
 }
 
 .button {
@@ -320,8 +320,9 @@ p {
 
 .signal-row {
   flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-top: 1.5rem;
+  gap: 0.48rem;
+  max-width: 720px;
+  margin-top: 1.25rem;
 }
 
 .signal-row span,
@@ -329,19 +330,19 @@ p {
 .mini-architecture span {
   display: inline-flex;
   align-items: center;
-  min-height: 2rem;
-  padding: 0.42rem 0.7rem;
+  min-height: 1.85rem;
+  padding: 0.34rem 0.62rem;
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--muted);
   background: rgba(255, 255, 255, 0.035);
-  font-size: 0.84rem;
+  font-size: 0.78rem;
   font-weight: 700;
 }
 
 .hero-panel {
   display: grid;
-  gap: 1rem;
+  gap: 0.85rem;
 }
 
 .portrait-card,
@@ -405,25 +406,25 @@ p {
 .metric-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.8rem;
+  gap: 0.7rem;
 }
 
 .metric-grid > div {
   display: grid;
   gap: 0.25rem;
-  padding: 1rem;
+  padding: 0.9rem;
   border-radius: 1rem;
 }
 
 .metric-grid strong {
   color: var(--accent-strong);
-  font-size: 1.8rem;
+  font-size: 1.55rem;
   line-height: 1;
 }
 
 .metric-grid span {
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   font-weight: 700;
 }
 
@@ -466,12 +467,17 @@ p {
 
 .lens-card {
   display: none;
-  padding: 1.4rem;
+  padding: 1.6rem;
   border-radius: 1.2rem;
 }
 
 .lens-card.is-visible {
   display: block;
+}
+
+.lens-card p {
+  max-width: 980px;
+  line-height: 1.72;
 }
 
 .lens-card span,
@@ -531,7 +537,7 @@ p {
 }
 
 [data-role].role-dim {
-  opacity: 0.58;
+  opacity: 0.72;
 }
 
 .timeline {
@@ -575,6 +581,7 @@ p {
 .project-card a {
   display: inline-flex;
   margin-top: 1rem;
+  margin-right: 1rem;
   color: var(--accent-strong);
   font-weight: 900;
 }
@@ -592,7 +599,8 @@ p {
 }
 
 .lab-card.active {
-  border-color: rgba(54, 214, 197, 0.5);
+  border-color: rgba(54, 214, 197, 0.58);
+  background: linear-gradient(180deg, var(--accent-soft), var(--panel));
 }
 
 .lab-status {
