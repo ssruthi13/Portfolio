@@ -478,6 +478,8 @@ p {
 .lens-card p {
   max-width: 980px;
   line-height: 1.72;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .lens-card span,
@@ -605,6 +607,46 @@ p {
 
 .lab-status {
   color: var(--warning);
+}
+
+.education-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.education-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.education-list li {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(280px, 1.4fr) auto;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.education-list strong {
+  color: var(--text);
+}
+
+.education-list span,
+.education-list time {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.education-list time {
+  white-space: nowrap;
 }
 
 .contact-section {

@@ -35,6 +35,11 @@
   .contact-section {
     grid-template-columns: 1fr;
   }
+
+  .education-list li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -151,6 +156,15 @@
   .lens-card,
   .contact-card {
     padding: 1rem;
+  }
+
+  .education-list li {
+    padding: 0.9rem;
+  }
+
+  .education-list span,
+  .education-list time {
+    font-size: 0.88rem;
   }
 
   .site-footer {
