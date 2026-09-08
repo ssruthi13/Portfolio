@@ -350,6 +350,7 @@ p {
 .metric-grid > div,
 .lens-card,
 .capability-card,
+.rules-card,
 .timeline-card,
 .project-card,
 .lab-card,
@@ -486,7 +487,8 @@ p {
 .project-kicker,
 .role-label,
 .lab-status,
-.capability-card p {
+.capability-card p,
+.rules-card p {
   display: block;
   margin-bottom: 0.55rem;
   color: var(--accent-strong);
@@ -498,6 +500,7 @@ p {
 
 .lens-card p,
 .capability-card span,
+.rules-card span,
 .timeline-card p,
 .project-card p,
 .lab-card p,
@@ -506,6 +509,7 @@ p {
 }
 
 .capability-grid,
+.rules-grid,
 .project-grid,
 .lab-grid {
   display: grid;
@@ -514,6 +518,7 @@ p {
 }
 
 .capability-card,
+.rules-card,
 .project-card,
 .lab-card {
   border-radius: 1.2rem;
@@ -526,6 +531,26 @@ p {
 
 .capability-card span {
   color: var(--muted);
+}
+
+.rules-section {
+  padding-top: 2.4rem;
+}
+
+.rules-card {
+  min-height: 245px;
+  background:
+    linear-gradient(180deg, rgba(54, 214, 197, 0.09), transparent 58%),
+    var(--panel);
+}
+
+.rules-card h3 {
+  min-height: 3.1rem;
+}
+
+.rules-card span {
+  color: var(--muted);
+  line-height: 1.68;
 }
 
 [data-role] {

@@ -27,6 +27,7 @@
 
       <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="#lens">Role Focus</a>
+        <a href="#rules">IBM ODM</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
@@ -47,6 +48,7 @@
 
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
       <a href="#lens">Role Focus</a>
+      <a href="#rules">IBM ODM</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
@@ -74,6 +76,10 @@
             <span>RAG</span>
             <span>MCP</span>
             <span>LangGraph</span>
+            <span>IBM ODM</span>
+            <span>Rule Designer</span>
+            <span>Decision Tables</span>
+            <span>Rule Execution Server</span>
             <span>AI Guardrails</span>
             <span>SDLC</span>
             <span>Agile</span>
@@ -131,12 +137,12 @@
           <div class="lens-card is-visible" data-lens-panel="backend">
             <span>Software Development focus</span>
             <h3>Distributed backend systems with production impact.</h3>
-            <p>My software development experience is centered on backend services, distributed workflows, and production delivery. I have built and supported Python and Java systems using Spring Boot, REST APIs, Kafka, PostgreSQL, CI/CD, Kubernetes, Dynatrace, ELK, and cloud platforms. At UPS, my work spans rating, billing, quoting, enterprise rules, deployment automation, and GenAI-enabled engineering workflows. At JPMorgan Chase, I supported high-volume financial notification systems during cloud migration, with attention to contract validation, API performance, and production tracing. This background gives me the practical foundation expected from a software engineer: service design, debugging, testing, observability, release quality, and ownership of systems where reliability and correctness matter.</p>
+            <p>My software development experience is centered on backend services, distributed workflows, and production delivery. I have built and supported Python and Java systems using Spring Boot, REST APIs, Kafka, PostgreSQL, CI/CD, Kubernetes, Dynatrace, ELK, and cloud platforms. At UPS, my work spans rating, billing, quoting, IBM ODM Rule Designer assets, decision tables, rule flows, deployment automation, and GenAI-enabled engineering workflows. At JPMorgan Chase, I supported high-volume financial notification systems during cloud migration, with attention to contract validation, API performance, and production tracing. This background gives me the practical foundation expected from a software engineer: service design, debugging, testing, observability, release quality, and ownership of systems where reliability and correctness matter.</p>
           </div>
           <div class="lens-card" data-lens-panel="fde">
             <span>Forward Deployed focus</span>
             <h3>Converting domain-heavy problems into usable systems.</h3>
-            <p>My experience fits forward deployed engineering because I have repeatedly worked at the intersection of business rules, technical systems, and delivery pressure. In logistics, I translated pricing and billing requirements into automated IBM ODM workflows and release paths. In financial services, I supported transactional alerting and subscription systems where product behavior, compliance expectations, and platform reliability had to align. In automotive, I validated parking-assist algorithms for production vehicle platforms. These projects required more than coding: they required understanding domain constraints, communicating with stakeholders, validating outcomes, and turning ambiguous requirements into software that teams can operate. That is the part of engineering I want to keep growing.</p>
+            <p>My experience fits forward deployed engineering because I have repeatedly worked at the intersection of business rules, technical systems, and delivery pressure. In logistics, I translated pricing, billing, and General Rate Increase requirements into IBM ODM decision tables, rule flows, validation checks, and scheduled deployment workflows that business and engineering teams could trust. In financial services, I supported transactional alerting and subscription systems where product behavior, compliance expectations, and platform reliability had to align. In automotive, I validated parking-assist algorithms for production vehicle platforms. These projects required more than coding: they required understanding domain constraints, communicating with stakeholders, validating outcomes, and turning ambiguous requirements into software that teams can operate.</p>
           </div>
           <div class="lens-card" data-lens-panel="ai">
             <span>Applied AI focus</span>
@@ -163,6 +169,11 @@
             <h3>Python, Java, Spring Boot, Kafka, REST APIs</h3>
             <span>Microservices, event-driven architecture, ETL, data pipelines, batch processing, validation layers, PostgreSQL, Oracle, MySQL, MongoDB, API design, and integration reliability.</span>
           </article>
+          <article class="capability-card" data-role="backend fde">
+            <p>Business Rules & Decision Services</p>
+            <h3>IBM ODM, Rule Designer, Decision Tables, Rule Flows</h3>
+            <span>Rule projects, business object models, rule services, Decision Center workflows, Rule Execution Server, RuleApp deployment, automated regression testing, version upgrades, and Java integration.</span>
+          </article>
           <article class="capability-card" data-role="backend ai">
             <p>Cloud, DevOps & Observability</p>
             <h3>AWS, GCP, Docker, Kubernetes, CI/CD</h3>
@@ -172,6 +183,39 @@
             <p>Engineering Practices</p>
             <h3>SDLC, Agile, testing, quality, stakeholder delivery</h3>
             <span>Requirements analysis, API contracts, Swagger/OpenAPI, Postman, JUnit, Mockito, SonarQube, code review, documentation, Agile/Scrum, production support, and cross-functional delivery.</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell rules-section" id="rules">
+        <div class="section-heading">
+          <p class="eyebrow">IBM ODM & business rules</p>
+          <h2>Decision-service engineering for enterprise pricing and billing.</h2>
+          <p>
+            Hands-on UPS work aligned to Blaze Rules and IBM ODM roles: rule authoring, decision tables, rule flows, deployment support, automated testing, troubleshooting, and release readiness for enterprise decision systems.
+          </p>
+        </div>
+
+        <div class="rules-grid">
+          <article class="rules-card" data-role="backend fde">
+            <p>Rule authoring</p>
+            <h3>Rule Designer assets for pricing logic</h3>
+            <span>Built and maintained rule projects, decision tables, rule flows, business object models, and rule services that converted pricing and billing policy into executable enterprise rules.</span>
+          </article>
+          <article class="rules-card" data-role="backend fde">
+            <p>General Rate Increase</p>
+            <h3>Automated annual pricing updates</h3>
+            <span>Supported GRI workflows through extraction, transformation, validation, lifecycle versioning, Decision Center Java client automation, and release checks across large pricing-record sets.</span>
+          </article>
+          <article class="rules-card" data-role="backend fde">
+            <p>Deployment support</p>
+            <h3>Schedulers, RES, and RuleApp releases</h3>
+            <span>Created ODM deployment scheduler workflows for delta detection, automated test generation, regression gates, RuleApp artifact publishing, GCP storage, and Rule Execution Server deployment readiness.</span>
+          </article>
+          <article class="rules-card" data-role="backend fde">
+            <p>Upgrade & production quality</p>
+            <h3>Testing, troubleshooting, and version readiness</h3>
+            <span>Worked across Rule Designer versioning, upgrade validation, lower-environment testing, console-based checks, Java service integration, production support, and defect triage with business and platform teams.</span>
           </article>
         </div>
       </section>
@@ -188,11 +232,13 @@
             <div class="timeline-date">Jul 2023 - Present</div>
             <div class="timeline-card">
               <p class="role-label">Senior Software Development Engineer | UPS</p>
-              <h3>GenAI, enterprise automation, and billing platform modernization</h3>
+              <h3>Business rules, GenAI, enterprise automation, and billing platform modernization</h3>
               <p>
                 Build production backend and applied AI systems for logistics workflows, combining GenAI, IBM ODM rule systems, Java/Spring Boot microservices, Kafka, GCP, and CI/CD delivery.
               </p>
               <ul>
+                <li>Authored and maintained IBM ODM Rule Designer assets including rule projects, decision tables, rule flows, business object models, and rule services for rating, billing, and pricing decision services.</li>
+                <li>Supported ODM version upgrades, deployment validation, Rule Execution Server readiness, console-based troubleshooting, regression testing, and release support across lower environments and production.</li>
                 <li>Built a production GenAI knowledge assistant in Python with RAG, hybrid BM25 plus vector retrieval over pgvector, semantic chunking, embeddings, re-ranking, and citation-backed responses.</li>
                 <li>Integrated IBM ODM, Azure DevOps, and engineering documentation through MCP behind a model-agnostic orchestration layer over Claude and OpenAI APIs.</li>
                 <li>Engineered a LangGraph-based agentic code-review and remediation workflow using SonarQube findings, Claude API tool-calling, structured outputs, GitHub Actions test gates, and human approval, cutting review effort about 40%.</li>
